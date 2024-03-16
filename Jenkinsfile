@@ -28,5 +28,13 @@ pipeline {
                 junit 'target/**/*.xml'
             }
         }
-}
-}
+	stage('Compile-create War file'){
+	    steps {
+		sh 'mvn package'  	
+				
+		}	
+	
+ 	}
+  	}
+	
+ 	}
