@@ -35,7 +35,7 @@ pipeline {
 		}	
 	
  	}
-	stage('Deploy war){
+	stage('Deploy war'){
 	   
 	    steps{
 		
