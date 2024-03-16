@@ -36,7 +36,7 @@ pipeline {
 	}
 	stage('deploy war'){
 	    steps {
-		sh 'cp -r /root/.jenkins/workspace/Gamutkart/target/gamutkart.war/. /root/Distros/apache-tomcat-9.0.87/webapps'
+		sh 'cp -r /root/.jenkins/workspace/Gamutkart/target/gamutkart.war /root/Distros/apache-tomcat-9.0.87/webapps'
 				
 		}	
  	}
