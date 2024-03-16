@@ -35,13 +35,7 @@ pipeline {
 		}	
 	
  	}
-	stage('Deploy war'){
-	   
-	    steps{
-		
-		scp -r root@172.31.28.124:/.jenkins/workspace/Gamutkart/target/gamutkart.war/. root@172.31.28.124:/Distros/apache-tomcat-9.0.87/webapps/
-		
-		}
+	
 
 	
 	}
