@@ -39,7 +39,7 @@ pipeline {
 	   
 	    steps{
 		
-		cp -r /root/.jenkins/workspace/Gamutkart/target/gamutkart.war ./root/Distros/apache-tomcat-9.0.87/webapps
+		cp -r /target/gamutkart.war/. /root/Distros/apache-tomcat-9.0.87/webapps/
 		
 		}
 
