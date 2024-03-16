@@ -39,7 +39,7 @@ pipeline {
 	   
 	    steps{
 		
-		scp -r /target/gamutkart.war/. /root/Distros/apache-tomcat-9.0.87/webapps/
+		cp -r /target/gamutkart.war/ /root/Distros/apache-tomcat-9.0.87/webapps/
 		
 		}
 
