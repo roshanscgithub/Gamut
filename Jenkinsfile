@@ -33,7 +33,11 @@ pipeline {
 		sh 'mvn package'  	
 				
 		}	
-	
+	stage('deploy war'){
+	    steps {
+		scp -r root@172.31.28.124:/root/.jenkins/workspace/Gamutkart/target/gamutkart.war/. root@172.31.28.124:/root/Distros/apache-tomcat-9.0.87/webapps
+				
+		}	
  	}
 	
 
